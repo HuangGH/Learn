@@ -8,12 +8,6 @@
     <artifactId>hgh</artifactId>
     <!-- 项目的版本-->
     <version>0.0.1-SNAPSHOT</version>
-    <modules>
-        <module>jdkLearn</module>
-    </modules>
-    <!-- 项目的打包方式-->
-    <packaging>pom</packaging>
-
     <dependencies>
         <!-- 谷歌 guava-->
         <dependency>
@@ -51,8 +45,22 @@
             <artifactId>grpc-stub</artifactId>
             <version>1.21.0</version>
         </dependency>
-
+      <dependency>
+        <artifactId>fastjson</artifactId>
+        <groupId>com.alibaba</groupId>
+        <version>1.2.58</version>
+      </dependency>
     </dependencies>
+  <!-- 项目的打包方式-->
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>jdkLearn</module>
+    <module>utils</module>
+    <module>test</module>
+    <module>SpringBoot</module>
+    <module>并发</module>
+  </modules>
     <build>
         <extensions>
             <extension>

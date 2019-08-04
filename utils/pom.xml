@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <artifactId>utils</artifactId>
+  <dependencies>
+    <dependency>
+      <!-- Import dependency management from Spring Boot -->
+      <artifactId>spring-boot-dependencies</artifactId>
+      <groupId>org.springframework.boot</groupId>
+      <scope>import</scope>
+      <type>pom</type>
+      <version>2.1.6.RELEASE</version>
+    </dependency>
+  </dependencies>
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>hgh</artifactId>
+    <groupId>com.java</groupId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+
+</project>
