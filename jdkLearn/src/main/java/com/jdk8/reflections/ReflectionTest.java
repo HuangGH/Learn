@@ -1,9 +1,10 @@
 package com.jdk8.reflections;
 
+import org.junit.Test;
+
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import org.junit.Test;
 
 /**
  * @author hgh 2019-07-11 10:08
@@ -19,7 +20,7 @@ public class ReflectionTest {
 
 	@Test
 	public void testMap() {
-		Map<String, Object> testMap = new HashMap<String, Object>();
+        Object testMap = new HashMap<String, Object>();
 		// testMap 是否是Map接口的实例
 		System.out.println(testMap instanceof Map);
 		// testMap 是否是Map接口的子接口的实例

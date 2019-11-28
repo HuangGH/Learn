@@ -12,6 +12,13 @@
       <type>pom</type>
       <version>2.1.6.RELEASE</version>
     </dependency>
+
+    <!-- dozer-->
+    <dependency>
+      <groupId>net.sf.dozer</groupId>
+      <artifactId>dozer</artifactId>
+      <version>5.5.1</version>
+    </dependency>
   </dependencies>
 
   <modelVersion>4.0.0</modelVersion>
@@ -21,5 +28,20 @@
     <groupId>com.java</groupId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
+
+  <repositories><!-- 代码库 -->
+    <repository>
+      <id>maven-ali</id>
+      <url>http://maven.aliyun.com/nexus/content/groups/public//</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+        <checksumPolicy>fail</checksumPolicy>
+      </snapshots>
+    </repository>
+  </repositories>
 
 </project>
