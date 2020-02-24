@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <import resource="dependency-lookup-context.xml"/>
+    <!-- util标签 -->
+    <!--    <bean id="userRepository" class="com.learn.think.in.spring.ioc.injection.UserRepository">-->
+    <!--        <property name="users">-->
+    <!--            <util:list>-->
+    <!--                <ref bean="user"/>-->
+    <!--                <ref bean="maleUser"/>-->
+    <!--            </util:list>-->
+    <!--        </property>-->
+    <!--    </bean>-->
+    <!--    根据auto自动注入-->
+    <bean id="userRepository" class="com.learn.think.in.spring.ioc.injection.UserRepository" autowire="byType"/>
+
+</beans>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user" class="com.learn.think.in.spring.ioc.domain.User" primary="true">
+        <property name="id" value="1"/>
+        <property name="name" value="黄港汇"/>
+    </bean>
+
+
+    <bean id="maleUser" class="com.learn.think.in.spring.ioc.domain.MaleUser" parent="user"/>
+
+
+    <bean id="objectFactory" class="org.springframework.beans.factory.config.ObjectFactoryCreatingFactoryBean">
+        <property name="targetBeanName" value="user"></property>
+    </bean>
+
+
+</beans>

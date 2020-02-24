@@ -1,5 +1,6 @@
+import com.github.dozermapper.core.DozerBeanMapperBuilder;
+import com.github.dozermapper.core.Mapper;
 import org.apache.commons.collections.CollectionUtils;
-import org.dozer.DozerBeanMapper;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -12,23 +13,23 @@ import java.util.List;
  */
 public class DozerUtils {
 
-    private static final DozerBeanMapper mapper = new DozerBeanMapper();
+    private static final Mapper MAPPER = DozerBeanMapperBuilder.buildDefault();
 
     /**
      * 单个对象转换
      */
-    public static <T> T transfrom(Class<T> destinationClass, Object source) {
+    public static <T> T transform(Class<T> destinationClass, Object source) {
         if (source == null) {
             return null;
         }
-        return mapper.map(source, destinationClass);
+        return MAPPER.map(source, destinationClass);
     }
 
 
     /**
      * 两个对象合并成一个
      */
-    public static <T> T transfrom(Class<T> destinationClass, Object major, Object secondary) {
+    public static <T> T transform(Class<T> destinationClass, Object major, Object secondary) {
         T result = null;
         try {
             result = destinationClass.newInstance();
@@ -39,10 +40,10 @@ public class DozerUtils {
             return null;
         }
         if (secondary != null) {
-            mapper.map(secondary, result);
+            MAPPER.map(secondary, result);
         }
         if (major != null) {
-            mapper.map(major, result);
+            MAPPER.map(major, result);
         }
         return result;
     }
@@ -58,13 +59,9 @@ public class DozerUtils {
         }
         List<T> result = new ArrayList<>(srcList.size());
         for (Object srcObject : srcList) {
-            result.add(transfrom(clazz, srcObject));
+            result.add(transform(clazz, srcObject));
         }
         return result;
-    }
-
-    public static void main(String[] args) {
-
     }
 
 
