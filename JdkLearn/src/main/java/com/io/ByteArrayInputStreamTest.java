@@ -11,6 +11,7 @@ public class ByteArrayInputStreamTest {
     };
 
     public static void main(String[] args) {
+
         String tmp = new String(ArrayLetters);
         System.out.println("ArrayLetters=" + tmp);
 
