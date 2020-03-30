@@ -16,6 +16,35 @@
         <logback.version>1.3.0-alpha4</logback.version>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.10</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-examples</artifactId>
+        </dependency>
+
+
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>
@@ -99,9 +128,9 @@
         <module>jdkLearn</module>
         <module>utils</module>
         <module>test</module>
-        <module>SpringBoot</module>
-        <module>ConcurrencyLearn</module>
         <module>think-in-spring</module>
+        <module>ThinkInJava</module>
+        <module>Springboot</module>
     </modules>
     <build>
         <extensions>

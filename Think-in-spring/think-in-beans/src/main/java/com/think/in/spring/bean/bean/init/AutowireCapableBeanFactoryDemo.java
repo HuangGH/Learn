@@ -14,7 +14,6 @@ public class AutowireCapableBeanFactoryDemo {
         annotationConfigApplicationContext.register(AutowireCapableBeanFactoryDemo.class);
         annotationConfigApplicationContext.refresh();
 
-
     }
 
     @Bean(initMethod = "initMethod")

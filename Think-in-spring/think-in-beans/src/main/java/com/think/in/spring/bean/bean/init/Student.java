@@ -21,6 +21,8 @@ public class Student implements InitializingBean {
 
     @Override
     public void afterPropertiesSet() throws Exception {
+        Student student = new Student();
+        System.out.println(student);
         System.out.println("InitializingBean....");
     }
 }

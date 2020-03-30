@@ -1,7 +1,7 @@
 package com.stream;
 
 import com.google.common.collect.Maps;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;

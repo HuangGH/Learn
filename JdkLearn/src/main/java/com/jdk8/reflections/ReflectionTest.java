@@ -1,7 +1,7 @@
 package com.jdk8.reflections;
 
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -21,7 +21,7 @@ public class ReflectionTest {
 
 	@Test
 	public void testMap() {
-        Object testMap = new HashMap<String, Object>();
+        HashMap testMap = new HashMap<String, Object>();
 		// testMap 是否是Map接口的实例
 		System.out.println(testMap instanceof Map);
 		// testMap 是否是Map接口的子接口的实例

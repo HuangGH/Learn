@@ -1,6 +1,7 @@
 package com.learn.think.in.spring.ioc.domain;
 
 import com.learn.think.in.spring.ioc.lookup.annotation.Male;
+import lombok.Data;
 import lombok.ToString;
 
 /**
@@ -9,8 +10,9 @@ import lombok.ToString;
  */
 @ToString(callSuper = true)
 @Male
+@Data
 public class MaleUser extends User {
 
-    private String sex = "male";
+    private String sex;
 
 }

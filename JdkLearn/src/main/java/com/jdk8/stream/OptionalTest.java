@@ -2,7 +2,7 @@ package com.jdk8.stream;
 
 import lombok.Data;
 import lombok.ToString;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;

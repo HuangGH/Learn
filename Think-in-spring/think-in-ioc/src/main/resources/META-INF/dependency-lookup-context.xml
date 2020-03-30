@@ -10,12 +10,14 @@
     </bean>
 
 
-    <bean id="maleUser" class="com.learn.think.in.spring.ioc.domain.MaleUser" parent="user"/>
-
-
-    <bean id="objectFactory" class="org.springframework.beans.factory.config.ObjectFactoryCreatingFactoryBean">
-        <property name="targetBeanName" value="user"></property>
+    <bean id="maleUser" class="com.learn.think.in.spring.ioc.domain.MaleUser" parent="user">
+        <property name="sex" value="male"/>
     </bean>
+
+
+    <!--    <bean id="objectFactory" class="org.springframework.beans.factory.config.ObjectFactoryCreatingFactoryBean">-->
+    <!--        <property name="targetBeanName" value="user"></property>-->
+    <!--    </bean>-->
 
 
 </beans>
